@@ -1,4 +1,3 @@
-<!-- resources/views/recommendations/index.blade.php -->
 
 @extends('layouts.app')
 

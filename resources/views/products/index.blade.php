@@ -5,12 +5,6 @@
         <div class="bg-white dark:bg-gray-800 shadow sm:rounded-lg p-6">
             <h2 class="text-3xl font-semibold text-center mb-4">Product List</h2>
 
-            <!-- @if(session('success'))
-                <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-2 mb-4 rounded">
-                    {{ session('success') }}
-                </div>
-            @endif -->
-
             <div class="overflow-x-auto">
                 <table class="table-auto w-full">
                     <thead>

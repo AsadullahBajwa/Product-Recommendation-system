@@ -1,6 +1,5 @@
 <?php
 
-// app/Http/Controllers/ProductController.php
 
 namespace App\Http\Controllers;
 

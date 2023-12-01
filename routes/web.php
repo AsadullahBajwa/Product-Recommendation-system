@@ -19,7 +19,6 @@ use App\Http\Controllers\ProductRecommendationController;
 |
 */
 
-// use App\Http\Controllers\ProductRatingController;
 
 
 Route::get('/product-recommendations', [ProductRecommendationController::class, 'recommend'])
@@ -27,7 +26,6 @@ Route::get('/product-recommendations', [ProductRecommendationController::class, 
     ->name('product.recommendations');
 
 Route::post('/product/{productId}', [ProductRatingController::class, 'store'])->name('product.like');
-
 
 Route::resource('products', ProductController::class);
 
@@ -39,12 +37,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::get('/dashboard', function () {
-//     return view('dashboard');
-// })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/dashboard', function () {
-    $products = Product::all(); // Fetch all products, you might want to paginate based on your needs
+    $products = Product::all(); // Fetch all products
     return view('dashboard', ['products' => $products]);
 })->middleware(['auth', 'verified'])->name('dashboard');
 

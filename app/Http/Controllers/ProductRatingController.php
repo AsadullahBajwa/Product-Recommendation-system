@@ -23,7 +23,7 @@ class ProductRatingController extends Controller
             ->first();
 
         if ($existingRating) {
-            // If the user has already rated, you might want to handle this case (e.g., show a message)
+            // If the user has already rated
             return redirect()->back()->with('error', 'You have already liked this product.');
         }
 
