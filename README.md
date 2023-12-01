@@ -1,3 +1,29 @@
+
+**Product recommendation System**
+
+**--> Steps to setup the project on your machine:**
+
+1-	Clone the Project:
+https://github.com/AsadullahBajwa/Product-Recommendation-system.git
+
+2-	composer install
+
+3-	Configure Environment.
+
+4-	Copy .env.example to .env.
+
+5-	Update .env with your database and application settings.
+
+6-	php artisan migrate
+
+7-	Test the Application: Visit http://localhost:8000 in your browser and test your Laravel application.
+
+**--> Summary of Product Recommendation system:**
+
+I have implemented a recommendation system that utilizes four database tables: Users, Products, ProductRating, and ProductRecommendation. When a user creates an account, they are presented with a list of products. If the user likes a particular product, that product, along with its product ID and the user's ID, is stored in the ProductRating table. Additionally, there is a recommendation page where users receive product recommendations based on the categories of products they have liked.
+This provides a general overview of the system. If you have any further questions or need additional details, feel free to ask.
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
